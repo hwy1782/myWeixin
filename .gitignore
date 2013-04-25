@@ -1,0 +1,24 @@
+# 以'#' 开始的行，被视为注释.
+# 忽略掉所有文件名是 foo.txt 的文件.
+# foo.txt
+# 忽略所有生成的 html 文件,
+#*.html
+# foo.html是手工维护的，所以例外.
+#!foo.html
+
+#  忽略eclipse自动生成的文件，可以通过window客户端查看那些修改的文件，然后决定是否提交这些文件
+*.class
+*.classpath
+*.log
+*.project
+*.cache
+*.apk
+R.java
+target/*/
+gen/*/
+bin/*
+
+# 忽略idea自动生成的文件：可以通过 vcs ->  show  change view ,查看被修改的文件，然后决定忽略那些文件
+.idea/*/
+.idea/*
+*.iml
